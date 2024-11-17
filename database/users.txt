@@ -1,0 +1,3 @@
+1, Radja Admiral, radja@gmail.com, 123, 123, admin
+2, Admiral Radja, admiral@gmail.com, 123, 123, user
+3, Daniel Darwin, eci@gmail.com, 123, 123, company

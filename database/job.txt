@@ -1,0 +1,8 @@
+1, asd, asd, asd, asd, asd
+2, PT. Electronic City Tbk., eci@gmail.com, Backend Developer, @eci.id,  Daniel Darwin
+3, PT. Electronic City Tbk., eci@gmail.com, Fullstack Developer, @eci.id, Daniel Darwin
+4, PT. Electronic City Tbk., eci@gmail.com, UI/UX Designer, @eci.id, Daniel Darwin
+5, PT. Electronic City Tbk., eci@gmail.com, DevOps Engineer, @eci.id, Daniel Darwin
+6, PT. Electronic City Tbk., eci@gmail.com, Mobile Developer, @eci.id, Daniel Darwin
+7, PT. Electronic City Tbk., eci@gmail.com, Finance Advisor, @eci.id, Daniel Darwin
+8, Panasonic, ps@gmail.com, Store Manager, @psonic.id, Muhammad Aditya
