@@ -52,7 +52,9 @@ def create_user():
 def read_user():
     print("=============== View User ===============")
 
+    #* Ini buat buat list data dari database //
     users = []
+    #* //
     with open('database/users.txt', 'r') as file:
         for line in file:
             data = line.strip().split(',')
@@ -66,6 +68,7 @@ def read_user():
             }
             users.append(user_info)
 
+    #* Ini buat sorting data dari database // k
     sort_order = input("Sort by name (ascending/descending): ").strip().lower()
     
     if sort_order == "ascending":
@@ -84,11 +87,16 @@ def read_user():
         print(f"Telp        : {user['telp']}")
         print(f"Role        : {user['role']}")
         print("------------------------------")
+    #* //
 
+    #* Ini input kalau admin mau cari user atau ngga
     search_choice = input("Do you want to search for a user? (yes/no): ").strip().lower()
     
+    #* Kalau admin ketik "yes" dia bakal ke code line 92 sampe 104
     if search_choice == 'yes':
+        #* Ini admin disuruh input nama atau email buat dicari
         search_term = input("Enter name or email to search: ").strip().lower()
+        #* Kalau user yang mau dicari sama admin ada di database, maka sistem akan nyari data user sesuai nama atau email
         found_users = [user for user in users if search_term in user['name'].lower() or search_term in user['email'].lower()]
         
         if found_users:
@@ -108,7 +116,9 @@ def read_user():
 def update_user():
     print("=============== Update User ===============")
     
+    #* Ini buat buat list data dari database //
     users = []
+    #* Open database users.txt dengan mode baca/read sebagai variable file
     with open('database/users.txt', 'r') as file:
         for line in file:
             data = line.strip().split(',')
@@ -120,6 +130,7 @@ def update_user():
                 'telp': data[4].strip(),
                 'role': data[5].strip()
             }
+            #* Ini buat buat list data dari database ke users di line 120 //
             users.append(user_info)
 
     for user in users:
